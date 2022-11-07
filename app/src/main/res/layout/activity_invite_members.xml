@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".activity.InviteMembersActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/txtMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/current_members" />
+
+        <TextView
+            android:id="@+id/txtCurrentMemberCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="83"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txtLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/limit"  />
+        <TextView
+            android:id="@+id/txtLimitCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:text="100" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/lnrSupporters"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtSupporters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/current_supporters" />
+
+        <TextView
+            android:id="@+id/txtSupportersCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txtSupportLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/limit" />
+        <TextView
+            android:id="@+id/txtSupportersLimitCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:text="100" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/TxtInvite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/invite_permissions"
+        />
+
+    <EditText
+        android:id="@+id/edtPermission"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="none"
+        android:focusable="false"
+        android:drawableRight="@android:drawable/arrow_down_float"/>
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="@string/invite_urls_are_valid_for_7_days_permissions_can_be_changed_from_the_member_management_view"
+        />
+
+    <TextView
+        android:id="@+id/txtPermissions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/what_are_permissions"
+        />
+
+    <Button
+        android:id="@+id/btnShareQRCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/share_qr_code" />
+
+    <Button
+        android:id="@+id/btnCopyLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/copy_link" />
+</LinearLayout>
